@@ -16,3 +16,9 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/index', 'PrototypeLumen@ShowIndex');
+
+$router->get('/multiply/{number}', 'PrototypeLumen@multiply');
+
+$router->post('/save', 'PrototypeLumen@save');
