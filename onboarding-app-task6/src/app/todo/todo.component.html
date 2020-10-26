@@ -1,0 +1,40 @@
+<app-nav></app-nav> 
+
+
+
+
+
+  <header>
+    <h1>All todo's</h1>
+    <div class='container' *ngFor="let todos of todoList">
+        <header>
+         
+          
+        </header>
+        <main>
+          <div class='normal'>
+           
+            <div class='module'>
+              <div class='thumbnail'>
+                <img src="../../assets/images/todoProto.jpg">
+                
+              </div>
+              <div class='content'>
+                
+                <h1 class='title'>{{ todos.payload.doc.data().titel }}</h1>
+                <h2 class='sub-title'>{{ todos.payload.doc.data().subtitel }}</h2>
+                <div>{{ todos.payload.doc.data().description }}</div>
+                <div>Deadline: {{ todos.payload.doc.data().datum.toDate() | date:'dd/MM/yyyy' }}</div>
+                
+              </div> 
+            </div>
+          </div>
+          
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+      

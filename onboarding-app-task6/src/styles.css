@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/*************************
+*       REM reset        *
+**************************/
+
+
+
+/*************************
+*     element reset      *
+**************************/
+
+*{ 
+   padding: 0;
+   margin: 0;
+}
+
+/*************************
+*      Old browser       *
+**************************/
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+body {
+   
+    font-family: 'Lato'; 
+    background-color: #EFEFEF;
+}
+
+ 

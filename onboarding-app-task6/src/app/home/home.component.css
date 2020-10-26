@@ -1,0 +1,67 @@
+
+
+.homeBtn{
+   
+    color: black;
+    margin-top: 55px;
+    background-color: Transparent;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    border: 2.5px solid black;
+    height:45%;
+    width:47%;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 3%;
+
+}
+
+
+
+.introTekst {
+    font-size: 60px;
+    color: black;
+    font-family: 'Lato', 'Black';
+    
+}
+
+
+
+
+ 
+  p {
+    color: black;
+    position: absolute;
+    margin-top: -10px;
+   
+    font-size: 20px;
+    display: flex;
+
+}
+
+.divMid{
+    position: absolute;
+  text-align: center;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0 0 -240px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
