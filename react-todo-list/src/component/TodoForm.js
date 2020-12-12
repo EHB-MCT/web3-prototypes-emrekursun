@@ -17,7 +17,7 @@ function TodoForm({addTodo}) {
         e.preventDefault();
         if(todo.task.trim()){
             addTodo({...todo, id: uuid()});
-            //To reset the todo input
+            
             setTodo({...todo, task: ""});
         }
     }

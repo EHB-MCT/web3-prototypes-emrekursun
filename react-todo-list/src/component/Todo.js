@@ -15,7 +15,7 @@ function Todo({todo, toggleComplete, removeTodo}){
       
 
     return(
-        // Implementatie van design is inline
+       
         <div  onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)} class="element"style={{ display:"flex"}} >
             {isShown && (
