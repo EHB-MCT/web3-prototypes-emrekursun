@@ -1,17 +1,30 @@
 <app-nav></app-nav>
 <app-user-list></app-user-list>
-<div id="chat-applicaton">
-    <h2>Chat hier met andere studenten</h2>
+<div id="chat-applicaton" *ngIf="doc$ | async as doc">
+  <div>
+    <h2>Chat hier met medestudenten</h2>
+  
     <div id="chat-window">
-      <div id="output" *ngFor="let data of output">
-          <p><strong>{{data.handle}} : </strong>{{data.message}}</p>
+      
+     
+        <h2>Chatlog</h2>
+        <div id="output"  *ngFor="let logs of doc.Messages"> 
+          
+          <p><strong>{{logs.username}} : </strong>{{ logs.message }}</p>
+          
       </div>
-      <div id="feedback"><p>{{feedback}}</p></div>
-    </div>
+      <hr>
+      <h2>Actual conversation</h2>
+      <div id="output" *ngFor="let data of output">
+        <p><strong>{{data.handle}} : </strong>{{ data.message }}</p>
+      </div>
+      <div id="feedback"><p>{{feedback}}</p></div> 
+    
    
     <input id="handle" type="text" [(ngModel)]="userName" placeholder="{{ user?.displayName }}" *ngIf="user" value="Typ hier uw naam - {{ user?.displayName }}"/> 
 
     <input id="message" type="text" [(ngModel)]="message" placeholder="Message" autocomplete="off"
       (keypress)="messageTyping()" /> 
-    <button type="button" id="send" style="cursor: pointer;" (click)="sendMessage()">Verzenden</button>
+    <button type="button" id="send" style="cursor: pointer;" (click)="sendMessage()">Verzenden</button> 
+</div>
 </div>
